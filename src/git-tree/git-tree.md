@@ -1,6 +1,6 @@
 This is a quick tutorial on the git tree structure. At the end of this brief walkthrough, you'll have a program that looks like this:
 
-![alt end-result](./git-tree.end.png?raw=true)
+![alt end-result](./git-tree-end.png?raw=true)
 
 Let's figure out what this means!
 
