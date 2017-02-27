@@ -105,13 +105,13 @@ $ git commit -am "BLOW UP THE WORLD"
 $ git log --graph --decorate --oneline --all 
 # hey, now it looks like a real tree... maybe a cactus...
 ```
-[alt: third-commit](./third-commit.png?raw=true)
+![alt third-commit](./third-commit.png?raw=true)
 ok, now here's some magic...
 ```bash
 $ git diff Goodbye master 
 # should look something like this:
 ```
-[alt: goodbye-world](./git-diff-goodbye-master.png?raw=true)
+![alt goodbye-world](./git-diff-goodbye-master.png?raw=true)
 now let's say I want to go back to where I was, to our original "Hello World" commit. I'll need the "commit id" of the version of the "tree" that I want.
 In this case, the "commit id" is 4f3c80a. You'll have to run the "git log" command above to find the commit id (which is unique and will be different on your computer).
 We could just run "git checkout 4f3c80a". But I'd like to create a new branch so it's easy to get back. So run this command:
@@ -123,7 +123,7 @@ now run git log again:
 ```bash
 $ git log --graph --decorate --oneline --all
 ```
-[alt: git-log-graph](./git-log-graph.png?raw=true)
+![alt git-log-graph](./git-log-graph.png?raw=true)
 
 remember, "HEAD -> Hello" means I'm looking at the Hello branch. The Hello branch points to commit 4f3c80a and everything below it.
 ```bash
@@ -131,6 +131,6 @@ $ git diff Hello Goodbye
 # this shows the changes that need to be made to get from Hello to Goodbye.
 # Remove "Hello World!" and add "Goodbye World!"
 ```
-[alt hello-goodbye](./git-diff-hello-goodbye.png?raw=true)
+![alt hello-goodbye](./git-diff-hello-goodbye.png?raw=true)
 
 I haven't gotten into remote repositories, etc, because there are plenty of resources on that. To me, understanding the tree structure is key to git.
